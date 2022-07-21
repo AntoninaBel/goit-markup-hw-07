@@ -1,0 +1,33 @@
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__item {
+    width: 270px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    color: var(--second-text-color);
+    @include font(700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+  }
+  &__desc {
+    color: var(--primary-text-color);
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+  }
+  &__photo {
+    margin-bottom: 30px;
+    justify-content: center;
+    @include position-items;
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-bg-color);
+  }
+}

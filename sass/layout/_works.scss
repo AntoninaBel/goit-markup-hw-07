@@ -1,0 +1,18 @@
+.works {
+  padding-bottom: 94px;
+}
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.works-title,
+.team-title {
+  margin-bottom: 50px;
+  color: var(--second-text-color);
+  @include font(700, 36px, 42px, 0.03em);
+  text-align: center;
+}
